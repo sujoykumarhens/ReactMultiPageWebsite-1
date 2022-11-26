@@ -4,7 +4,7 @@ import "./index.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import {Navigation,Footer,Home,About,Contact,Blog,Posts,Post,} from "./components";
+import { Navigation, Footer, Home, About, Contact, Blog, Posts, Post, Dashboard } from "./components";
 
 ReactDOM.render(
   <Router>
@@ -19,6 +19,10 @@ ReactDOM.render(
       </Route>
     </Routes>
     <Footer />
+
+    <Routes>
+      <Route path="dashboard" element={<Dashboard />} />
+    </Routes>
   </Router>,
 
   document.getElementById("root")

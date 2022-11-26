@@ -5,7 +5,7 @@ import "../css/navigation.css";
 function Navigation() {
   return (
     <div className="navigation">
-      <nav className="navbar navbar-expand navbar-dark" style={styles.mainnavbar}>
+      <nav className="navbar navbar-expand mainnavbar">
         <div className="container" style={styles.firstrow}>
           <NavLink className="navbar-brand" to="/">
             <object
@@ -24,33 +24,28 @@ function Navigation() {
             <button type="submit">  <i className="bi bi-search"></i></button>
             <input type="text" placeholder="Search products" name="q" />
           </form>
-
           <div className="w-100 " id="navbarScroll">
             <ul className="navbar-nav float-end">
               <li className="nav-item">
-                <div class="input-group text-size">
-                  <span class="input-group-btn align-self-center">
-                    <button type="button" class="btn align-self-center" data-type="minus">
-                      <span class="bi bi-plus-circle"></span>
+                <div className="input-group text-size">
+                  <span className="input-group-btn align-self-center">
+                    <button type="button" className="btn align-self-center" data-type="minus">
+                      <span className="bi bi-plus-circle"></span>
                     </button>
                   </span>
                   <span className="align-self-center">T</span>
-                  <span class="input-group-btn align-self-center">
-                    <button type="button" class="btn align-self-center" data-type="plus" >
-                      <span class="bi bi-dash-circle"></span>
+                  <span className="input-group-btn align-self-center">
+                    <button type="button" className="btn align-self-center" data-type="plus" >
+                      <span className="bi bi-dash-circle"></span>
                     </button>
                   </span>
                 </div>
-                {/* <NavLink className="nav-link" to="/">
-                  Home
-                  <span className="sr-only">(current)</span>
-                </NavLink> */}
               </li>
               <li className="nav-item">
                 {/* <NavLink className="nav-link" to="/about">
                   About
                 </NavLink> */}
-                <div class="btn-group">
+                <div className="btn-group">
                   <button className="btn dropdown-toggle languagebtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EN
                   </button>
@@ -60,10 +55,7 @@ function Navigation() {
                 </div>
               </li>
               <li className="nav-item">
-                {/* <NavLink className="nav-link" to="/contact">
-                  Contact
-                </NavLink> */}
-                <div class="btn-group">
+                <div className="btn-group">
                   <button className="btn loginBtn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Login
                   </button>
@@ -72,45 +64,37 @@ function Navigation() {
                   </ul>
                 </div>
               </li>
-              <li className="nav-item">
-
-              </li>
-              {/* <li className="nav-item">
-                <NavLink className="nav-link" to="/blog">
-                  Blog
-                </NavLink>
-              </li> */}
             </ul>
           </div>
         </div>
       </nav>
-      <nav class="navbar navbar-expand-lg secondnavbar">
-        <div class="container">
-          <div class="collapse navbar-collapse flex-row-reverse" id="navbarText">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+      <nav className="navbar navbar-expand-lg secondnavbar">
+        <div className="container">
+          <div className="collapse navbar-collapse flex-row-reverse" id="navbarText">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="dashboard">About</NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Departments</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Departments</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tenders</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Tenders</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">RTI</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">RTI</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Projects</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Kolkata</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">About Kolkata</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+              <li className="nav-item">
+                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">More</a>
                 <ul className="dropdown-menu dropdown-menu-end">
                   ...
                 </ul>
@@ -119,40 +103,40 @@ function Navigation() {
           </div>
         </div>
       </nav>
-      <nav class="navbar d-lg-none">
-        <button class="navbar-toggler  menubtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
+      <nav className="navbar d-lg-none hiddennavbar">
+        <button className="navbar-toggler  menubtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+          <div className="offcanvas-header">
+            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body" >
-            <ul class="navbar-nav ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <div className="offcanvas-body" >
+            <ul className="navbar-nav ">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="dashboard">About</NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Departments</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Departments</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tenders</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Tenders</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">RTI</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">RTI</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Projects</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Kolkata</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">About Kolkata</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+              <li className="nav-item">
+                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">More</a>
                 <ul className="dropdown-menu dropdown-menu-end">
                   ...
                 </ul>
@@ -171,8 +155,5 @@ const styles = {
     overflow: "visible",
     justifyContent: "start"
   },
-  mainnavbar: {
-    background: "#302BA0",
-  }
 };
 export default Navigation;
