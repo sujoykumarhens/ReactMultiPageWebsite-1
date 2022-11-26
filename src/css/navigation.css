@@ -1,0 +1,134 @@
+.logo {
+  height: 90px;
+  width: auto;
+  margin-top: 50px;
+}
+
+.search-bar {
+  margin-left: 40px;
+  width: 100%;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+  border-color: rgba(129, 96, 221);
+  padding: 5px;
+}
+
+.search-bar input {
+  background: transparent;
+  width: 100%;
+  flex: 1;
+  border: 0;
+  padding: 2px 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+  outline: none;
+}
+
+::placeholder {
+  color: whitesmoke;
+}
+
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: none;
+  color: whitesmoke;
+}
+
+
+.text-size span {
+  font-weight: 400;
+  color: white;
+  font-size: 20px;
+}
+
+.text-size button {
+  border: none;
+  padding: 0;
+  margin: auto 10px;
+  outline: none;
+}
+
+.navigation .navbar-nav .nav-item {
+  margin: auto 10px;
+}
+
+.navigation .navbar-nav .btn {
+  color: whitesmoke;
+  text-decoration: none;
+  border: none;
+}
+
+.navigation .navbar-nav .dropdown-toggle::after {
+  border: none !important;
+  font: normal 11px bootstrap-icons;
+  content: "\F282" !important;
+  padding-left: 5px;
+  vertical-align: text-bottom;
+}
+
+.navigation .navbar-nav .loginBtn {
+  font-weight: 500;
+  font-size: 14px;
+  color: #302BA0;
+  background-color: white;
+  padding: 8px 25px;
+}
+
+#navbarTogglerDemo03 {
+  justify-content: flex-end;
+}
+.menubtn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0;
+}
+.secondnavbar{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background-color:0;
+}
+@media only screen and (max-width: 600px) {
+  .search-bar {
+    max-width: 120px;
+    padding: 0;
+    margin-left: 0;
+  }
+  .search-bar input {
+    font-size: 12px;
+    padding:5px;
+  }
+  .search-bar button i {
+    font-size: 12px;
+  }
+  .search-bar button {
+    width: 20px;
+    height: 100%;
+  }
+  .logo {
+    margin-top: 10px;
+    height: 40px;
+  }
+  .text-size span,
+  .text-size button span {
+    font-size: 16px;
+  }
+  .text-size button {
+    margin: auto 5px;
+  }
+  .navigation .navbar-nav .nav-item {
+    margin: auto 2px;
+  }
+  .navigation .navbar-nav .loginBtn,.navigation .navbar-nav .languagebtn {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+}
